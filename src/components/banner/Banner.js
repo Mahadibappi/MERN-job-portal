@@ -1,65 +1,34 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-
+import { GoSearch } from "react-icons/go";
 const Banner = () => {
   return (
-    <div>
-      <div className="carousel w-full ">
-        <div id="slide1" className="carousel-item relative w-full">
-          <img
-            src="https://www.yolo-japan.com/assets/top/img/banner/scout/scout_1200%C3%97400_en_pc.webp?v202403050100"
-            className="w-full cover  h-3/2
-            "
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide2" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide2" className="carousel-item relative w-full">
-          <img
-            src="https://www.yolo-japan.com/assets/top/img/banner/poster/monitor_en.webp?v202403050100"
-            className="w-full"
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide3" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide3" className="carousel-item relative w-full">
-          <img
-            src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
-            className="w-full"
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide4" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide4" className="carousel-item relative w-full">
-          <img
-            src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
-            className="w-full"
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide1" className="btn btn-circle">
-              ❯
-            </a>
+    <div
+      className="hero object-cover relative h-[550px]"
+      style={{
+        backgroundImage:
+          "url(https://img.freepik.com/free-photo/colleague-talking-together-while-coming-back-from-work_1150-2994.jpg?t=st=1714370123~exp=1714373723~hmac=760723b25aaf70f6cabce4303c7bb2ab50f90094297e782762de280d984a62c8&w=1380)",
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-70 "></div>
+      <div className="hero-content text-center text-neutral-content">
+        <div className="max-w-lg text-slate-100">
+          <h1 className="mb-5 text-4xl font-semi-bold ">
+            Find jobs in japan near me over 500+ companies offer jobs
+          </h1>
+          <div className="relative mt-12">
+            <div className="absolute left-6 top-1 p-2 m-2 flex items-center">
+              <GoSearch className="w-8 h-8" />
+            </div>
+            <input
+              type="text"
+              placeholder="Job Title or company"
+              className="w-full py-5 px-6 rounded-lg bg-neutral-700 text-white text-xl text-center placeholder-neutral-200 focus:outline-none focus:ring-2 focus:ring-primary "
+            />
+
+            <button className="absolute right-3 top-2 mt-2 mr-4 rounded-md py-2 px-3 bg-blue-600 ">
+              Search
+            </button>
           </div>
         </div>
       </div>
